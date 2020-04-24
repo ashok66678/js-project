@@ -1,0 +1,37 @@
+<html>
+<head>
+
+<script type="text/javascript">
+
+
+
+function create(){
+
+var createstuff = document.createElement("p");
+createstuff.innerHTML="Stuff";
+document.getElementById("container").appendChild(createstuff);
+
+
+}
+
+function destroy(){
+
+var olddata=document.getElementById("container").lastChild;
+document.getElementById("container").removeChild(olddata);
+
+}
+
+</script>
+
+        <title>Javascript2_lesson11</title>
+
+</head>
+<body>
+      <input type="button" value="Psst over here" onmouseover="create();" onmouseout="destroy();">
+
+      <p id="container"></p>
+
+
+
+</body>
+</html>

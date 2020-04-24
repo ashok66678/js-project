@@ -1,0 +1,114 @@
+.grid-container,.buttons{
+    display: grid;
+    grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+    /* padding: 10px; */
+    width: 900px;
+    margin: auto;
+    position: relative;
+  }
+  .grid-item {
+    background-color:#fff;
+    border: 2px solid rgba(155, 202, 25, 0.8);
+     padding: 13px; 
+    font-size: 30px;
+    color:#000;
+    text-align: center;
+    position: relative;
+    /* background: url(giti.png);
+   background-attachment: fixed;
+   background-position: 0%; */
+  } 
+  .buttons{
+    padding: 4px 13px;
+  }
+
+  .snake1{
+    position: absolute;
+    z-index:2;
+    left:44%;
+    top: 28px;
+    
+  }
+ .snakeimg{
+   width: 375px;
+ }
+
+ .lz{
+  position: absolute;
+  z-index:2;
+left:37%;
+  bottom: 104px;
+  
+}
+.lzimg{
+ width: 265px;
+}
+
+.ld{
+  position: absolute;
+  z-index:2;
+right:8%;
+  top: 233px;
+  transform: rotate(-42deg);
+  
+}
+.ldimg1{
+ width: 149px;
+}
+
+.ld2{
+  position: absolute;
+  z-index:2;
+left: 170px;
+  top: 503px;
+  transform: rotate(-3deg);
+  
+}
+.ldimg2{
+ width: 100px;
+}
+
+
+.ld3{
+  position: absolute;
+  z-index:2;
+right:8%;
+  top: 233px;
+  transform: rotate(-42deg);
+  
+}
+.ldimg3{
+ width: 149px;
+}
+
+
+/* .giti{
+  position: absolute;
+  z-index:2;
+
+left:-13px;
+bottom: 45px;
+} */
+.grid-item img{
+ width: 80px;
+ position: absolute;;
+ z-index: 5;
+ right: 0px;
+ bottom: 0px;
+
+}
+
+#soundimg{
+  width: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#nosoundimg{
+  width: 50px;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+ 
+}

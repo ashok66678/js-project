@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="Snake.CSS">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+<body>
+  <div class="container">
+<div class="row">
+  <div class="col-9">
+   <h1 style="text-align: center;" onload="myAudio.play();">Snake Game</h1>
+</div>
+<div class="col-3">
+<img src="soundimg.png" id="soundimg" onclick="backgroudSound();"/>
+    <img src="nosound.jpg" id="nosoundimg" onclick="noBackgroudSound();" />
+    </div>
+</div>
+<div class="grid-container">
+  <div class="grid-item" id="100" >100</div>
+  <div class="grid-item" id="99" >99</div>
+  <div class="grid-item" id="98" >98</div>  
+  <div class="grid-item" id="97" >97</div>
+  <div class="grid-item" id="96" >96</div>
+  <div class="grid-item" id="95" >95</div>  
+  <div class="grid-item" id="94" >94</div>
+  <div class="grid-item" id="93" >93</div>
+  <div class="grid-item" id="92" >92</div>
+  <div class="grid-item" id="91" >91</div>
+  <div class="grid-item" id="81" >81</div>
+  <div class="grid-item" id="82" >82</div>
+  <div class="grid-item" id="83" >83</div>  
+  <div class="grid-item" id="84" >84</div>
+  <div class="grid-item" id="85" >85</div>
+  <div class="grid-item" id="86" >86</div>  
+  <div class="grid-item" id="87" >87</div>
+  <div class="grid-item" id="88" >88</div>
+  <div class="grid-item" id="89" >89</div>
+  <div class="grid-item" id="90" >90</div>
+  <div class="grid-item" id="80" >80</div>
+  <div class="grid-item" id="79" >79</div>
+  <div class="grid-item" id="78" >78</div>  
+  <div class="grid-item" id="77" >77</div>
+  <div class="grid-item" id="76" >76</div>
+  <div class="grid-item" id="75" >75</div>  
+  <div class="grid-item" id="74" >74</div> 
+  <div class="grid-item" id="73" >73</div>
+  <div class="grid-item" id="72" >72</div>
+  <div class="grid-item" id="71" >71</div>
+  <div class="grid-item" id="61" >61</div>
+  <div class="grid-item" id="62" >62</div>
+  <div class="grid-item" id="63" >63</div>  
+  <div class="grid-item" id="64" >64</div>
+  <div class="grid-item" id="65" >65</div>
+  <div class="grid-item" id="66" >66</div>
+  <div class="grid-item" id="67" >67</div>
+  <div class="grid-item" id="68" >68</div>
+  <div class="grid-item" id="69" >69</div>
+  <div class="grid-item" id="70" >70</div>
+  <div class="grid-item" id="60" >60</div>
+  <div class="grid-item" id="59" >59</div>
+  <div class="grid-item" id="58" >58</div>  
+  <div class="grid-item" id="57" >57</div>
+  <div class="grid-item" id="56" >56</div>
+  <div class="grid-item" id="55" >55</div>  
+  <div class="grid-item" id="54" >54</div>
+  <div class="grid-item" id="53" >53</div>
+  <div class="grid-item" id="52" >52</div>
+  <div class="grid-item" id="51" >51</div>
+  <div class="grid-item" id="41" >41</div>
+  <div class="grid-item" id="42" >42</div>
+  <div class="grid-item" id="43" >43</div>  
+  <div class="grid-item" id="44" >44</div>
+  <div class="grid-item" id="45" >45</div>
+  <div class="grid-item" id="46" >46</div>  
+  <div class="grid-item" id="47" >47</div>
+  <div class="grid-item" id="48" >48</div>
+  <div class="grid-item" id="49" >49</div>
+  <div class="grid-item" id="50" >50</div>
+  <div class="grid-item" id="40" >40</div>
+  <div class="grid-item" id="39" >39</div>
+  <div class="grid-item" id="38" >38</div>  
+  <div class="grid-item" id="37" >37</div>
+  <div class="grid-item" id="36" >36</div>
+  <div class="grid-item" id="35" >35</div>  
+  <div class="grid-item" id="34" >34</div>
+  <div class="grid-item" id="33" >33</div>
+  <div class="grid-item" id="32" >32</div>
+  <div class="grid-item" id="31" >31</div>
+  <div class="grid-item" id="21" >21</div>
+  <div class="grid-item" id="22" >22</div>
+  <div class="grid-item" id="23" >23</div>  
+  <div class="grid-item" id="24" >24</div>
+  <div class="grid-item" id="25" >25</div>
+  <div class="snake1"><img src="aa.svg" class="snakeimg"/></div>
+  <div class="lz"><img src="lz1.svg" class="lzimg"/></div>
+  <div class="ld"><img src="ld1.svg" class="ldimg1"/></div>
+  <div class="ld2"><img src="ld2.svg" class="ldimg2"/></div><div class="ld2"><img src="ld2.svg" class="ldimg2"/></div>
+  <!-- <div class="ld3"><img src="ld3.svg" class="ldimg3"/></div> -->
+ 
+  <div class="grid-item" id="26" >26</div>  
+  <div class="grid-item" id="27" >27</div>
+  <div class="grid-item" id="28" >28</div>
+  <div class="grid-item" id="29" >29</div>
+  <div class="grid-item" id="30" >30</div>
+  <div class="grid-item" id="20" >20</div>
+  <div class="grid-item" id="19" >19</div>
+  <div class="grid-item" id="18" >18</div>  
+  <div class="grid-item" id="17" >17</div>
+  <div class="grid-item" id="16" >16</div>
+  <div class="grid-item" id="15"  >15</div>  
+  <div class="grid-item" id="14" >14</div>
+  <div class="grid-item" id="13" >13</div>
+  <div class="grid-item" id="12" >12</div>
+  <div class="grid-item" id="11" >11</div>
+  <div class="grid-item" id="1" >1</div>
+  <div class="grid-item" id="2" >2</div>
+  <div class="grid-item" id="3" >3</div>  
+  <div class="grid-item" id="4" >4</div>
+  <div class="grid-item" id="5" >5</div>
+  <div class="grid-item" id="6" >6</div>  
+  <div class="grid-item" id="7" >7</div>
+  <div class="grid-item" id="8" >8</div>
+  <div class="grid-item" id="9" >9</div>
+  <div class="grid-item" id="10" >10</div>
+
+
+
+
+  
+  <div class="row bg-info buttons">
+      <button id="player1" onclick="snake();" class="btn btn-warning btn-lg col-4">player 1</button>
+      <button id="button" desaible class="btn btn-dark btn-lg col-4">Dice</button>
+      <button id="player2" onclick="snake();" class="btn btn-danger btn-lg col-4">player 2</button>
+    
+    </div> 
+</div>
+
+</div>
+<script src="snake.js"> </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
